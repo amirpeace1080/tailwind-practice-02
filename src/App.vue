@@ -2,7 +2,13 @@
   <div id="app">
     <nav>
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About</router-link> |
+      <router-link to="/custom">Custom</router-link> |
+      <router-link to="/button">Button</router-link> |
+      <router-link to="/flex">Flex</router-link> |
+      <router-link to="/gallery">Gallery</router-link> |
+      <router-link to="/focus">Focus</router-link> |
+      <router-link to="/formName">FormName</router-link>
     </nav>
     <router-view/>
   </div>

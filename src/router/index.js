@@ -1,6 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import AboutView from '../views/AboutView'
+import Custom from "@/views/Custom";
+import ButtonView from "@/views/ButtonView";
+import FlexView from "@/views/FlexView";
+import GalleryView from "@/views/GalleryView";
+import FocusView from "@/views/FocusView";
+import FormName from "@/views/FormName";
 
 Vue.use(VueRouter)
 
@@ -13,10 +20,37 @@ const routes = [
   {
     path: '/about',
     name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    component: AboutView
+  },
+  {
+    path: '/custom',
+    name: 'custom',
+    component: Custom
+  },
+  {
+    path: '/button',
+    name: 'button',
+    component: ButtonView
+  },
+  {
+    path: '/flex',
+    name: 'flex',
+    component: FlexView
+  },
+  {
+    path: '/gallery',
+    name: 'gallery',
+    component: GalleryView
+  },
+  {
+    path: '/focus',
+    name: 'focus',
+    component: FocusView
+  },
+  {
+    path: '/formName',
+    name: 'formName',
+    component: FormName
   }
 ]
 
